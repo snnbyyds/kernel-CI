@@ -8,6 +8,7 @@ export ARCH=arm64
 export SUBARCH=arm64
 export PATH=$PATH:$ANDROID_AARCH64
 export CROSS_COMPILE=aarch64-linux-android-
+mkdir output
 make O=output sdm845_defconfig
 cd output
 make O=output -j16
