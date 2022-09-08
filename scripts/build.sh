@@ -2,7 +2,7 @@
 
 cd ~
 #git clone https://github.com/acuicultor/Radioactive_kernel_op6.git ~/linux
-git clone  -b lineage-19.1  https://github.com/LineageOS/android_kernel_oneplus_sdm845.git ~/linux
+git clone --depth=1 -b lineage-19.1  https://github.com/LineageOS/android_kernel_oneplus_sdm845.git ~/linux
 #git clone --depth=1 -b dot11 https://github.com/dotOS-Devices/android_kernel_oneplus_fajita.git ~/linux
 #git clone -b release_Q https://github.com/snnbyyds/Radioactive_kernel_op6.git ~/linux
 #git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9 ~/aarch64-linux-android-4.9
@@ -18,6 +18,6 @@ export PATH=$PATH:$ANDROID_AARCH64
 export CROSS_COMPILE=aarch64-linux-android-
 cd ~/linux
 mkdir output
-make O=output kronic_defconfig
+make O=output enchilada_defconfig
 cd output
 make O=output -j16
