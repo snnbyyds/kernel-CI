@@ -2,8 +2,8 @@
 
 cd ~
 #git clone https://github.com/acuicultor/Radioactive_kernel_op6.git ~/linux
-#git clone --depth=1 -b lineage-19.1 https://github.com/Linux-Mobile/android_kernel_oneplus_sdm845.git ~/linux
-git clone --depth=1 -b snow https://github.com/snnbyyds/kernel_oneplus_sdm845.git ~/linux
+git clone --depth=1 -b lineage-20.0 https://github.com/snnbyyds/android_kernel_oneplus_sdm845-2.git ~/linux
+#git clone --depth=1 -b snow https://github.com/snnbyyds/kernel_oneplus_sdm845.git ~/linux
 
 #wget https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/+archive/961622e926a1b21382dba4dd9fe0e5fb3ee5ab7c.tar.gz
 
@@ -19,6 +19,6 @@ export PATH=$PATH:$ANDROID_AARCH64
 export CROSS_COMPILE=aarch64-elf-
 cd ~/linux
 mkdir output
-make O=output evo_defconfig -j8
+make O=output enchilada_defconfig -j8
 cd output
 make O=output -j8
