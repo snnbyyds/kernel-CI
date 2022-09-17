@@ -9,7 +9,7 @@ git clone --depth=1 -b lineage-19.1 https://github.com/Linux-Mobile/android_kern
 mkdir toolchain
 git clone https://github.com/radcolor/aarch64-elf.git toolchain
 cd toolchain
-#
+
 #tar -xpf ../*.tar.gz
 cd ~
 export ANDROID_AARCH64=~/toolchain/bin
