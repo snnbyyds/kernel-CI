@@ -1,7 +1,6 @@
 #!/bin/bash
 
 cd ~
-#git clone https://github.com/acuicultor/Radioactive_kernel_op6.git ~/linux
 git clone --depth=1 -b lineage-19.1 https://github.com/Linux-Mobile/android_kernel_oneplus_sdm845.git ~/linux
 #git clone --depth=1 -b snow https://github.com/snnbyyds/kernel_oneplus_sdm845.git ~/linux
 
